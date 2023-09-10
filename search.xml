@@ -143,11 +143,22 @@
     
     
     <entry>
-      <title></title>
-      <link href="/css/iconfont.css"/>
-      <url>/css/iconfont.css</url>
+      <title>关于</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
-        <content type="html"><![CDATA[.iconfont {font-family: "iconfont" !important;font-size: 3em;/* 可以定义图标大小 */font-style: normal;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}/* 若已经在项目设置中勾选了彩色选项，则无需再定义图标颜色*//* .icon-rat:before {  color: #85c3de;}.icon-ox:before {  color: #ffaf6e;}.icon-tiger:before {  color: #f7c768;}.icon-rabbit:before {  color: #ffbdd8;}.icon-dragon:before {  color: #ff8787;}.icon-snake:before {  color: #c3d686;}.icon-horse:before {  color: #ffaf6e;}.icon-goat:before {  color: #f7c768;}.icon-monkey:before {  color: #c3d686;}.icon-rooster:before {  color: #ff8787;}.icon-dog:before {  color: #85c3de;}.icon-boar:before {  color: #ffbdd8;} */]]></content>
+        <content type="html"><![CDATA[<p><img src="https://www.raremetalsmarket.com/res/xd-images/static/dev.png"></p>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>追番</title>
+      <link href="/bangumis/index.html"/>
+      <url>/bangumis/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -166,43 +177,10 @@
     
     <entry>
       <title></title>
-      <link href="/css/runtime.css"/>
-      <url>/css/runtime.css</url>
+      <link href="/css/iconfont.css"/>
+      <url>/css/iconfont.css</url>
       
-        <content type="html"><![CDATA[div#runtime {    width: 180px;    margin: auto;    color: #fff;    padding-inline: 5px;    border-radius: 10px;    background-color: rgba(0, 0, 0, .7)}#workboard {    font-size: 12px}[data-theme=dark] div#runtime {    color: #28b4c8;    box-shadow: 0 0 5px rgba(28, 69, 218, .71);    animation: flashlight 1s linear infinite alternate}#ghbdages .github-badge img {    height: 20px}@-moz-keyframes flashlight {    from {        box-shadow: 0 0 5px #1478d2    }    to {        box-shadow: 0 0 2px #1478d2    }}@-webkit-keyframes flashlight {    from {        box-shadow: 0 0 5px #1478d2    }    to {        box-shadow: 0 0 2px #1478d2    }}@-o-keyframes flashlight {    from {        box-shadow: 0 0 5px #1478d2    }    to {        box-shadow: 0 0 2px #1478d2    }}@keyframes flashlight {    from {        box-shadow: 0 0 5px #1478d2    }    to {        box-shadow: 0 0 2px #1478d2    }}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>追番</title>
-      <link href="/bangumis/index.html"/>
-      <url>/bangumis/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>关于</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      
-        <content type="html"><![CDATA[<p><img src="https://www.raremetalsmarket.com/res/xd-images/static/dev.png"></p>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/js/coin.js"/>
-      <url>/js/coin.js</url>
-      
-        <content type="html"><![CDATA[var tipButtons = document.querySelectorAll(".tip-button");function coinAudio() {  var coinAudio = document.getElementById("coinAudio");  if (coinAudio) {    coinAudio.play(); //有音频时播放  }}// Loop through all buttons (allows for multiple buttons on page)tipButtons.forEach(button => {  var coin = button.querySelector(".coin");  // The larger the number, the slower the animation  coin.maxMoveLoopCount = 90;  button.addEventListener("click", () => {    if (/Android|webOS|BlackBerry/i.test(navigator.userAgent)) return true; //媒体选择    if (button.clicked) return;    button.classList.add("clicked");    // Wait to start flipping th coin because of the button tilt animation    setTimeout(() => {      // Randomize the flipping speeds just for fun      coin.sideRotationCount = Math.floor(Math.random() * 5) * 90;      coin.maxFlipAngle = (Math.floor(Math.random() * 4) + 3) * Math.PI;      button.clicked = true;      flipCoin();      coinAudio();    }, 50);  });  var flipCoin = () => {    coin.moveLoopCount = 0;    flipCoinLoop();  };  var resetCoin = () => {    coin.style.setProperty("--coin-x-multiplier", 0);    coin.style.setProperty("--coin-scale-multiplier", 0);    coin.style.setProperty("--coin-rotation-multiplier", 0);    coin.style.setProperty("--shine-opacity-multiplier", 0.4);    coin.style.setProperty("--shine-bg-multiplier", "50%");    coin.style.setProperty("opacity", 1);    // Delay to give the reset animation some time before you can click again    setTimeout(() => {      button.clicked = false;    }, 300);  };  var flipCoinLoop = () => {    coin.moveLoopCount++;    var percentageCompleted = coin.moveLoopCount / coin.maxMoveLoopCount;    coin.angle = -coin.maxFlipAngle * Math.pow(percentageCompleted - 1, 2) + coin.maxFlipAngle;    // Calculate the scale and position of the coin moving through the air    coin.style.setProperty("--coin-y-multiplier", -11 * Math.pow(percentageCompleted * 2 - 1, 4) + 11);    coin.style.setProperty("--coin-x-multiplier", percentageCompleted);    coin.style.setProperty("--coin-scale-multiplier", percentageCompleted * 0.6);    coin.style.setProperty("--coin-rotation-multiplier", percentageCompleted * coin.sideRotationCount);    // Calculate the scale and position values for the different coin faces    // The math uses sin/cos wave functions to similate the circular motion of 3D spin    coin.style.setProperty("--front-scale-multiplier", Math.max(Math.cos(coin.angle), 0));    coin.style.setProperty("--front-y-multiplier", Math.sin(coin.angle));    coin.style.setProperty("--middle-scale-multiplier", Math.abs(Math.cos(coin.angle), 0));    coin.style.setProperty("--middle-y-multiplier", Math.cos((coin.angle + Math.PI / 2) % Math.PI));    coin.style.setProperty("--back-scale-multiplier", Math.max(Math.cos(coin.angle - Math.PI), 0));    coin.style.setProperty("--back-y-multiplier", Math.sin(coin.angle - Math.PI));    coin.style.setProperty("--shine-opacity-multiplier", 4 * Math.sin((coin.angle + Math.PI / 2) % Math.PI) - 3.2);    coin.style.setProperty("--shine-bg-multiplier", -40 * (Math.cos((coin.angle + Math.PI / 2) % Math.PI) - 0.5) + "%");    // Repeat animation loop    if (coin.moveLoopCount < coin.maxMoveLoopCount) {      if (coin.moveLoopCount === coin.maxMoveLoopCount - 6) button.classList.add("shrink-landing");      window.requestAnimationFrame(flipCoinLoop);    } else {      button.classList.add("coin-landed");      coin.style.setProperty("opacity", 0);      setTimeout(() => {        button.classList.remove("clicked", "shrink-landing", "coin-landed");        setTimeout(() => {          resetCoin();        }, 300);      }, 1500);    }  };});]]></content>
+        <content type="html"><![CDATA[.iconfont {font-family: "iconfont" !important;font-size: 3em;/* 可以定义图标大小 */font-style: normal;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}/* 若已经在项目设置中勾选了彩色选项，则无需再定义图标颜色*//* .icon-rat:before {  color: #85c3de;}.icon-ox:before {  color: #ffaf6e;}.icon-tiger:before {  color: #f7c768;}.icon-rabbit:before {  color: #ffbdd8;}.icon-dragon:before {  color: #ff8787;}.icon-snake:before {  color: #c3d686;}.icon-horse:before {  color: #ffaf6e;}.icon-goat:before {  color: #f7c768;}.icon-monkey:before {  color: #c3d686;}.icon-rooster:before {  color: #ff8787;}.icon-dog:before {  color: #85c3de;}.icon-boar:before {  color: #ffbdd8;} */]]></content>
       
     </entry>
     
@@ -221,21 +199,21 @@
     
     <entry>
       <title></title>
-      <link href="/js/title.js"/>
-      <url>/js/title.js</url>
+      <link href="/css/runtime.css"/>
+      <url>/css/runtime.css</url>
       
-        <content type="html"><![CDATA[//动态标题var OriginTitile = document.title;var titleTime;document.addEventListener("visibilitychange", function () {  if (document.hidden) {    //离开当前页面时标签显示内容    document.title = "w(ﾟДﾟ)w 不要走！再看看嘛！";    clearTimeout(titleTime);  } else {    //返回当前页面时标签显示内容    document.title = "♪(^∇^*)欢迎肥来！" + OriginTitile;    //两秒后变回正常标题    titleTime = setTimeout(function () {      document.title = OriginTitile;    }, 2000);  }});]]></content>
+        <content type="html"><![CDATA[div#runtime {    width: 180px;    margin: auto;    color: #fff;    padding-inline: 5px;    border-radius: 10px;    background-color: rgba(0, 0, 0, .7)}#workboard {    font-size: 12px}[data-theme=dark] div#runtime {    color: #28b4c8;    box-shadow: 0 0 5px rgba(28, 69, 218, .71);    animation: flashlight 1s linear infinite alternate}#ghbdages .github-badge img {    height: 20px}@-moz-keyframes flashlight {    from {        box-shadow: 0 0 5px #1478d2    }    to {        box-shadow: 0 0 2px #1478d2    }}@-webkit-keyframes flashlight {    from {        box-shadow: 0 0 5px #1478d2    }    to {        box-shadow: 0 0 2px #1478d2    }}@-o-keyframes flashlight {    from {        box-shadow: 0 0 5px #1478d2    }    to {        box-shadow: 0 0 2px #1478d2    }}@keyframes flashlight {    from {        box-shadow: 0 0 5px #1478d2    }    to {        box-shadow: 0 0 2px #1478d2    }}]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>友情链接</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
+      <title></title>
+      <link href="/js/coin.js"/>
+      <url>/js/coin.js</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[var tipButtons = document.querySelectorAll(".tip-button");function coinAudio() {  var coinAudio = document.getElementById("coinAudio");  if (coinAudio) {    coinAudio.play(); //有音频时播放  }}// Loop through all buttons (allows for multiple buttons on page)tipButtons.forEach(button => {  var coin = button.querySelector(".coin");  // The larger the number, the slower the animation  coin.maxMoveLoopCount = 90;  button.addEventListener("click", () => {    if (/Android|webOS|BlackBerry/i.test(navigator.userAgent)) return true; //媒体选择    if (button.clicked) return;    button.classList.add("clicked");    // Wait to start flipping th coin because of the button tilt animation    setTimeout(() => {      // Randomize the flipping speeds just for fun      coin.sideRotationCount = Math.floor(Math.random() * 5) * 90;      coin.maxFlipAngle = (Math.floor(Math.random() * 4) + 3) * Math.PI;      button.clicked = true;      flipCoin();      coinAudio();    }, 50);  });  var flipCoin = () => {    coin.moveLoopCount = 0;    flipCoinLoop();  };  var resetCoin = () => {    coin.style.setProperty("--coin-x-multiplier", 0);    coin.style.setProperty("--coin-scale-multiplier", 0);    coin.style.setProperty("--coin-rotation-multiplier", 0);    coin.style.setProperty("--shine-opacity-multiplier", 0.4);    coin.style.setProperty("--shine-bg-multiplier", "50%");    coin.style.setProperty("opacity", 1);    // Delay to give the reset animation some time before you can click again    setTimeout(() => {      button.clicked = false;    }, 300);  };  var flipCoinLoop = () => {    coin.moveLoopCount++;    var percentageCompleted = coin.moveLoopCount / coin.maxMoveLoopCount;    coin.angle = -coin.maxFlipAngle * Math.pow(percentageCompleted - 1, 2) + coin.maxFlipAngle;    // Calculate the scale and position of the coin moving through the air    coin.style.setProperty("--coin-y-multiplier", -11 * Math.pow(percentageCompleted * 2 - 1, 4) + 11);    coin.style.setProperty("--coin-x-multiplier", percentageCompleted);    coin.style.setProperty("--coin-scale-multiplier", percentageCompleted * 0.6);    coin.style.setProperty("--coin-rotation-multiplier", percentageCompleted * coin.sideRotationCount);    // Calculate the scale and position values for the different coin faces    // The math uses sin/cos wave functions to similate the circular motion of 3D spin    coin.style.setProperty("--front-scale-multiplier", Math.max(Math.cos(coin.angle), 0));    coin.style.setProperty("--front-y-multiplier", Math.sin(coin.angle));    coin.style.setProperty("--middle-scale-multiplier", Math.abs(Math.cos(coin.angle), 0));    coin.style.setProperty("--middle-y-multiplier", Math.cos((coin.angle + Math.PI / 2) % Math.PI));    coin.style.setProperty("--back-scale-multiplier", Math.max(Math.cos(coin.angle - Math.PI), 0));    coin.style.setProperty("--back-y-multiplier", Math.sin(coin.angle - Math.PI));    coin.style.setProperty("--shine-opacity-multiplier", 4 * Math.sin((coin.angle + Math.PI / 2) % Math.PI) - 3.2);    coin.style.setProperty("--shine-bg-multiplier", -40 * (Math.cos((coin.angle + Math.PI / 2) % Math.PI) - 0.5) + "%");    // Repeat animation loop    if (coin.moveLoopCount < coin.maxMoveLoopCount) {      if (coin.moveLoopCount === coin.maxMoveLoopCount - 6) button.classList.add("shrink-landing");      window.requestAnimationFrame(flipCoinLoop);    } else {      button.classList.add("coin-landed");      coin.style.setProperty("opacity", 0);      setTimeout(() => {        button.classList.remove("clicked", "shrink-landing", "coin-landed");        setTimeout(() => {          resetCoin();        }, 300);      }, 1500);    }  };});]]></content>
       
     </entry>
     
@@ -253,9 +231,9 @@
     
     
     <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>友情链接</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -268,7 +246,29 @@
       <link href="/music/index.html"/>
       <url>/music/index.html</url>
       
-        <content type="html"><![CDATA[    <div id="aplayer-PXHMplUE" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="4153486990" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"    ></div>]]></content>
+        <content type="html"><![CDATA[    <div id="aplayer-JEWhTbeT" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="4153486990" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"    ></div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/js/title.js"/>
+      <url>/js/title.js</url>
+      
+        <content type="html"><![CDATA[//动态标题var OriginTitile = document.title;var titleTime;document.addEventListener("visibilitychange", function () {  if (document.hidden) {    //离开当前页面时标签显示内容    document.title = "w(ﾟДﾟ)w 不要走！再看看嘛！";    clearTimeout(titleTime);  } else {    //返回当前页面时标签显示内容    document.title = "♪(^∇^*)欢迎肥来！" + OriginTitile;    //两秒后变回正常标题    titleTime = setTimeout(function () {      document.title = OriginTitile;    }, 2000);  }});]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
