@@ -3,11 +3,11 @@
   <title>林祁禾的摸鱼空间</title>
   
   <subtitle>不忘初心，砥砺前行</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="http://www.linqihe.com/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="http://www.linqihe.com/"/>
   <updated>2023-09-09T16:50:02.666Z</updated>
-  <id>http://example.com/</id>
+  <id>http://www.linqihe.com/</id>
   
   <author>
     <name>林祁禾</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>测试外部链接</title>
-    <link href="http://example.com/posts/151170f1.html"/>
-    <id>http://example.com/posts/151170f1.html</id>
+    <link href="http://www.linqihe.com/posts/151170f1.html"/>
+    <id>http://www.linqihe.com/posts/151170f1.html</id>
     <published>2023-09-09T09:43:41.000Z</published>
     <updated>2023-09-09T16:50:02.666Z</updated>
     
@@ -30,17 +30,17 @@
     
     
     
-    <category term="前端" scheme="http://example.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="http://www.linqihe.com/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="测试" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95/"/>
+    <category term="测试" scheme="http://www.linqihe.com/tags/%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
   <entry>
     <title>送给全世界最可爱的皮皮</title>
-    <link href="http://example.com/posts/6402216c.html"/>
-    <id>http://example.com/posts/6402216c.html</id>
+    <link href="http://www.linqihe.com/posts/6402216c.html"/>
+    <id>http://www.linqihe.com/posts/6402216c.html</id>
     <published>2023-09-09T08:29:27.000Z</published>
     <updated>2023-09-09T16:49:52.169Z</updated>
     
@@ -51,17 +51,17 @@
     
     
     
-    <category term="独一无二" scheme="http://example.com/categories/%E7%8B%AC%E4%B8%80%E6%97%A0%E4%BA%8C/"/>
+    <category term="独一无二" scheme="http://www.linqihe.com/categories/%E7%8B%AC%E4%B8%80%E6%97%A0%E4%BA%8C/"/>
     
     
-    <category term="礼物" scheme="http://example.com/tags/%E7%A4%BC%E7%89%A9/"/>
+    <category term="礼物" scheme="http://www.linqihe.com/tags/%E7%A4%BC%E7%89%A9/"/>
     
   </entry>
   
   <entry>
     <title>哔哩哔哩测试</title>
-    <link href="http://example.com/posts/1f85ad0a.html"/>
-    <id>http://example.com/posts/1f85ad0a.html</id>
+    <link href="http://www.linqihe.com/posts/1f85ad0a.html"/>
+    <id>http://www.linqihe.com/posts/1f85ad0a.html</id>
     <published>2023-09-09T08:16:22.000Z</published>
     <updated>2023-09-09T16:49:57.805Z</updated>
     
@@ -72,17 +72,17 @@
     
     
     
-    <category term="前端" scheme="http://example.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="http://www.linqihe.com/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="测试" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95/"/>
+    <category term="测试" scheme="http://www.linqihe.com/tags/%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
   <entry>
     <title>花落半夏,落叶知秋</title>
-    <link href="http://example.com/posts/a995eee6.html"/>
-    <id>http://example.com/posts/a995eee6.html</id>
+    <link href="http://www.linqihe.com/posts/a995eee6.html"/>
+    <id>http://www.linqihe.com/posts/a995eee6.html</id>
     <published>2023-09-08T18:30:47.000Z</published>
     <updated>2023-09-09T16:50:07.916Z</updated>
     
@@ -93,17 +93,17 @@
     
     
     
-    <category term="文学" scheme="http://example.com/categories/%E6%96%87%E5%AD%A6/"/>
+    <category term="文学" scheme="http://www.linqihe.com/categories/%E6%96%87%E5%AD%A6/"/>
     
     
-    <category term="生活" scheme="http://example.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    <category term="生活" scheme="http://www.linqihe.com/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
   <entry>
     <title>阳光正好，微风不燥！</title>
-    <link href="http://example.com/posts/5c2fafc7.html"/>
-    <id>http://example.com/posts/5c2fafc7.html</id>
+    <link href="http://www.linqihe.com/posts/5c2fafc7.html"/>
+    <id>http://www.linqihe.com/posts/5c2fafc7.html</id>
     <published>2023-09-08T05:54:20.000Z</published>
     <updated>2023-09-09T16:50:16.001Z</updated>
     
@@ -114,10 +114,10 @@
     
     
     
-    <category term="文学" scheme="http://example.com/categories/%E6%96%87%E5%AD%A6/"/>
+    <category term="文学" scheme="http://www.linqihe.com/categories/%E6%96%87%E5%AD%A6/"/>
     
     
-    <category term="生活" scheme="http://example.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    <category term="生活" scheme="http://www.linqihe.com/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
