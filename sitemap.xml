@@ -112,7 +112,7 @@
 
   <url>
     <loc>http://www.linqihe.com/</loc>
-    <lastmod>2023-09-11</lastmod>
+    <lastmod>2023-09-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -120,21 +120,21 @@
   
   <url>
     <loc>http://www.linqihe.com/tags/%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2023-09-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.linqihe.com/tags/%E7%A4%BC%E7%89%A9/</loc>
-    <lastmod>2023-09-11</lastmod>
+    <lastmod>2023-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.linqihe.com/tags/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2023-09-11</lastmod>
+    <lastmod>2023-09-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.linqihe.com/tags/%E7%A4%BC%E7%89%A9/</loc>
+    <lastmod>2023-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -143,21 +143,21 @@
   
   <url>
     <loc>http://www.linqihe.com/categories/%E5%89%8D%E7%AB%AF/</loc>
-    <lastmod>2023-09-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.linqihe.com/categories/%E7%8B%AC%E4%B8%80%E6%97%A0%E4%BA%8C/</loc>
-    <lastmod>2023-09-11</lastmod>
+    <lastmod>2023-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.linqihe.com/categories/%E6%96%87%E5%AD%A6/</loc>
-    <lastmod>2023-09-11</lastmod>
+    <lastmod>2023-09-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.linqihe.com/categories/%E7%8B%AC%E4%B8%80%E6%97%A0%E4%BA%8C/</loc>
+    <lastmod>2023-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
